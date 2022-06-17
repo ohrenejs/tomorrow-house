@@ -1,0 +1,33 @@
+$font-sizes: (
+  12: $font-size-12,
+  13: $font-size-13,
+  14: $font-size-14,
+  16: $font-size-16,
+  18: $font-size-18,
+  24: $font-size-24,
+);
+$line-heights: (
+  12: $line-height-12,
+  13: $line-height-13,
+  14: $line-height-14,
+  16: $line-height-16,
+  18: $line-height-18,
+  24: $line-height-24,
+);
+$letter-spacings: (
+  12: $letter-spacing-12,
+  13: $letter-spacing-13,
+  14: $letter-spacing-14,
+  16: $letter-spacing-16,
+  18: $letter-spacing-18,
+  24: $letter-spacing-24,
+);
+
+@mixin text-style($size, $color: false) {
+  font-size: map-get($font-sizes, $size);
+  line-height: map-get($line-heights, $size);
+  letter-spacing: map-get($letter-spacings, $size);
+  @if (type-of($color) == color) {
+    color: $color;
+  }
+}
