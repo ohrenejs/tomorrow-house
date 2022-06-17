@@ -1,0 +1,25 @@
+$flex-map: (
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+);
+
+@mixin flexbox($jc: center, $ai: center) {
+  display: flex;
+  align-items: map-get($flex-map, $ai);
+  justify-content: map-get($flex-map, $jc);
+}
+@mixin inline-flexbox($jc: center, $ai: center) {
+  display: inline-flex;
+  align-items: map-get($flex-map, $ai);
+  justify-content: map-get($flex-map, $jc);
+}
+@mixin column-flexbox($jc: center, $ai: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: map-get($flex-map, $ai);
+  justify-content: map-get($flex-map, $jc);
+}
