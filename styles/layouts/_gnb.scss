@@ -43,6 +43,20 @@
         margin-right: 24px;
       }
 
+      .gnb-auth {
+        @include text-style(14, $secondary);
+        margin-left: 8px;
+        font-weight: 700;
+
+        a:first-child {
+          margin-right: 12px;
+        }
+
+        a:hover {
+          color: $blue;
+        }
+      }
+
       .gnb-icon-btn {
         margin-right: 8px;
       }
