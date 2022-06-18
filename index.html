@@ -24,89 +24,91 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="gnb">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <div class="gnb-left">
-              <h1>
-                <a href="./"
-                  ><img src="./assets/images/Logo.svg" alt="내일의 집"
-                /></a>
-              </h1>
+            <div class="gnb-wrapper">
+              <div class="gnb-left">
+                <h1 class="logo">
+                  <a href="./"
+                    ><img src="./assets/images/Logo.svg" alt="내일의 집"
+                  /></a>
+                </h1>
 
-              <nav class="sm-hidden">
-                <h2 class="visually-hidden">메뉴</h2>
-                <a href="#">커뮤니티</a>
-                <a href="#">스토어</a>
-                <a href="#">인테리어시공</a>
-              </nav>
+                <nav class="sm-hidden">
+                  <h2 class="visually-hidden">메뉴</h2>
+                  <a href="#">커뮤니티</a>
+                  <a href="#">스토어</a>
+                  <a href="#">인테리어시공</a>
+                </nav>
 
-              <button
-                type="button"
-                class="sm-only gnb-icon-btn"
-                aria-label="메뉴 열기 버튼"
-              >
-                <i class="i-menu"></i>
-              </button>
-            </div>
-
-            <div class="gnb-right">
-              <div class="lg-only input-group">
-                <input
-                  type="text"
-                  class="form-input"
-                  placeholder="스토어 검색"
-                />
-                <i class="i-search" aria-hidden="true"></i>
+                <button
+                  type="button"
+                  class="sm-only gnb-icon-btn gnb-menu-btn"
+                  aria-label="메뉴 열기 버튼"
+                >
+                  <i class="i-menu"></i>
+                </button>
               </div>
 
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="lg-hidden gnb-icon-btn"
-                  aria-label="검색창 열기 버튼"
-                >
-                  <i class="i-search"></i>
-                </button>
-
-                <a
-                  href="#"
-                  class="sm-hidden gnb-icon-btn"
-                  aria-label="북마크 페이지로 이동"
-                >
-                  <i class="i-bookmark"></i>
-                </a>
-                <a
-                  href="#"
-                  class="sm-hidden gnb-icon-btn"
-                  aria-label="내 소식 페이지로 이동"
-                >
-                  <i class="i-bell"></i>
-                </a>
-                <a
-                  href="#"
-                  class="gnb-icon-btn"
-                  aria-label="장바구니 페이지로 이동"
-                >
-                  <i class="i-cart"></i>
-                </a>
-
-                <button
-                  type="button"
-                  class="sm-hidden gnb-avater-btn avatar-32"
-                  aria-label="마이메뉴 열기 버튼"
-                >
-                  <img
-                    src="./assets/images/img-user-01.jpg"
-                    alt="사달라 아저씨"
+              <div class="gnb-right">
+                <div class="lg-only input-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="스토어 검색"
                   />
+                  <i class="i-search" aria-hidden="true"></i>
+                </div>
+
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="lg-hidden gnb-icon-btn gnb-search-btn"
+                    aria-label="검색창 열기 버튼"
+                  >
+                    <i class="i-search"></i>
+                  </button>
+
+                  <a
+                    href="#"
+                    class="sm-hidden gnb-icon-btn"
+                    aria-label="북마크 페이지로 이동"
+                  >
+                    <i class="i-bookmark"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="sm-hidden gnb-icon-btn"
+                    aria-label="내 소식 페이지로 이동"
+                  >
+                    <i class="i-bell"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="gnb-icon-btn"
+                    aria-label="장바구니 페이지로 이동"
+                  >
+                    <i class="i-cart"></i>
+                  </a>
+
+                  <button
+                    type="button"
+                    class="sm-hidden gnb-avater-btn avatar-32"
+                    aria-label="마이메뉴 열기 버튼"
+                  >
+                    <img
+                      src="./assets/images/img-user-01.jpg"
+                      alt="사달라 아저씨"
+                    />
+                  </button>
+                </div>
+
+                <button type="button" class="sm-hidden btn-primary btn-40">
+                  글쓰기 <i class="i-chevron" aria-hidden="true"></i>
                 </button>
               </div>
-
-              <button type="button" class="sm-hidden btn-primary btn-40">
-                글쓰기 <i class="i-chevron" aria-hidden="true"></i>
-              </button>
             </div>
           </div>
         </div>
