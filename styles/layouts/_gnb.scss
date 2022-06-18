@@ -40,4 +40,49 @@
       height: 20px;
     }
   }
+
+  @include responsive(T) {
+    &-wrapper {
+      height: 80px;
+    }
+
+    &-left {
+      @include flexbox(start);
+    }
+
+    &-right {
+      .btn-group {
+        margin-right: 24px;
+      }
+
+      .gnb-icon-btn {
+        margin-right: 8px;
+      }
+
+      .btn-primary {
+        width: 88px;
+
+        i {
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .logo {
+      position: static;
+      margin-right: 32px;
+      transform: none;
+
+      img {
+        height: 24px;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .input-group {
+      width: 264px;
+      margin-right: 24px;
+    }
+  }
 }
